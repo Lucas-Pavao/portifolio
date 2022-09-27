@@ -21,6 +21,8 @@ nav {
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
     box-shadow: 0px 8px 9px 0px rgba(49, 13, 137, 0.33);
+    position: sticky;
+    top: 0px;
 
 
 }
@@ -76,4 +78,59 @@ main {
     height: 600px;
     background-color: #03687B;
 
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidades .habilidades-cards {
+
+    width: 90vw;
+    height: 600px;
+    margin-top: 10px;
+    background-color: #03687B;
+
+}
+
+.academico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.academico .left-block-academico,
+.right-block-academico {
+
+    margin-top: 10px;
+    width: 40vw;
+    height: 600px;
+    background-color: #03687B;
+
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .social-block {
+
+    width: 90vw;
+    height: 600px;
+    margin-top: 10px;
+    background-color: #03687B;
+
+}
+
+footer {
+    width: 100vw;
+    height: 300px;
+    background-color: #0A070F;
 }
