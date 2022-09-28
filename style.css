@@ -9,20 +9,25 @@
 
 }
 
+body {
+    background-color: #27282c;
+}
+
 
 
 nav {
     width: 100vw;
     height: 80px;
-    background-color: #09001E;
+    background-color: #2C223001;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
-    box-shadow: 0px 8px 9px 0px rgba(49, 13, 137, 0.33);
-    position: fixed;
-    top: 0px;
+    /* box-shadow: 0px 1px 0px 0px #000; */
+    /* position: sticky; */
+    /* top: 0px; */
+    border: 1px #000 solid;
 
 
 }
@@ -31,6 +36,11 @@ nav .logo {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    color: #FF5F00;
+}
+
+nav .logo p {
+    letter-spacing: 0;
 }
 
 nav ul {
@@ -55,9 +65,134 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #03687B;
+    background-color: #FF5F00;
 
 }
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.home .left-block-home,
+.right-block-home {
+
+    margin-top: 10px;
+    width: 40vw;
+    height: 600px;
+    /* background-color: #03687B; */
+
+}
+
+.home .left-block-home {
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.home .left-block-home p {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.home .left-block-home h1 {
+    font-size: 70px;
+    font-weight: 800;
+    color: #FF5F00;
+}
+
+.buttons-block {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.buttons-block a {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+
+}
+
+.buttons-block a:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.buttons-block a::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+
+}
+
+.buttons-block a span {
+    position: relative;
+    z-index: 1;
+}
+
+.buttons-block a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.buttons-block a i::before {
+    content: "";
+    position: absolute;
+    border: 2px var(--clr) solid;
+    width: 10px;
+    height: 5px;
+    left: 80%;
+    top: -3.5px;
+    transform: translateX(-50%);
+    background: #27282c;
+    transition: 0.5s;
+}
+
+.buttons-block a:hover i::before {
+
+    width: 20px;
+    left: 20%;
+
+}
+
+.buttons-block a i::after {
+    content: "";
+    position: absolute;
+    border: 2px var(--clr) solid;
+    width: 10px;
+    height: 5px;
+    left: 20%;
+    bottom: -3.5px;
+    transform: translateX(-50%);
+    background: #27282c;
+    transition: 0.5s;
+}
+
+.buttons-block a:hover i::after {
+
+    width: 20px;
+    left: 80%;
+
+}
+
 
 .sobre {
     display: flex;
@@ -66,13 +201,22 @@ nav ul li a:hover {
     justify-content: space-around;
 }
 
-.sobre .bloc {
+
+.sobre .left-block-sobre,
+.right-block-sobre {
 
     margin-top: 10px;
     width: 40vw;
     height: 600px;
-    background-color: #03687B;
+    /* background-color: #03687B; */
 
+}
+
+.sobre .right-block-sobre p {
+
+    color: #00080C;
+    font-size: 65px;
+    font-weight: 800;
 }
 
 .habilidades {
