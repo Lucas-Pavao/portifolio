@@ -9,6 +9,7 @@
 
 }
 
+
 body {
     background-color: #27282c;
 }
@@ -18,13 +19,15 @@ body {
 nav {
     width: 99vw;
     height: 80px;
-    background-color: #2C223001;
+    background-color: #27282c;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
     border-bottom: 1px #000 solid;
+    position: sticky;
+    top: 0px;
 
 
 }
@@ -314,24 +317,28 @@ nav ul li a:hover {
 
 }
 
-
-
-
-
-/* 
 .projetos {
+    margin-top: 70px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
 }
 
-.projetos .left-block-projetos,
-.right-block-projetos {
+.projetos h1 {
 
+    color: #FFD300;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+
+
+.projetos .block-projetos {
     width: 90vw;
-    height: 600px;
-    margin-top: 10px;
-    background-color: #03687B;
-
-} */
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
